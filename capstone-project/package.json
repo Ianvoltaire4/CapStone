@@ -11,9 +11,18 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0"
+=======
+    "bulma": "^0.9.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.17.0",
+    "react-router-dom": "^6.17.0"
+>>>>>>> 4ea50b3a9c606c7ad378f15d74d73f01f7cb7b14
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

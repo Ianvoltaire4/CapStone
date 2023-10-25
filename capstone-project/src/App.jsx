@@ -1,10 +1,21 @@
 import React from 'react'
-import './App.css'
+import { useState, useContext, createContext } from 'react'
+import { Routes, Route } from 'react-router'
+import HomePage from './HomePage'
+
+
+
+
 const App = () => {
+
   return (
-    <div>
-      Hi
-    </div>
+    <>
+      <div>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+      </div>
+    </>
   )
 }
 
