@@ -1,8 +1,9 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
+import { Button, Form, Nav } from 'react-bootstrap'
 import { Navbar } from 'react-bootstrap'
 import { NavDropdown } from 'react-bootstrap'
 import {Container} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 const HomePage = () => {
   return (
@@ -32,8 +33,15 @@ const HomePage = () => {
       </Container>
     </Navbar>
         </div>
-    <div>
-        
+    <div id='Login'>
+      <p>Sign In</p>
+        <Form action='/login' method='post'>
+          <input type='email' id='email' name='email' placeholder='Enter Email' required></input>
+          <input type='password' id='password' name='password' placeholder='Enter Password' required></input>
+          <Button type='submit'>Sign In</Button>
+          <p>Need to Create an Account?<Link to='./SignUpPage'>Click Here</Link></p>
+          <p>Forgot Password?</p>
+        </Form>
     </div>
     </>
   )
